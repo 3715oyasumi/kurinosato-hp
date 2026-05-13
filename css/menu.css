@@ -684,6 +684,9 @@
   .menu-page-grid--2col {
     grid-template-columns: 1fr;
   }
+  .menu-page-grid--center {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   /* カード：グリッドスタイル */
   .menu-page-card {
