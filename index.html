@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>農業レストラン 栗の里 | 相模原インター店</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@700;800&family=Zen+Old+Mincho:wght@700;900&family=Kaisei+Opti:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+</head>
+<body class="page-top">
+
+  <!-- ===== ヘッダー（固定） ===== -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <a href="#">
+          <img src="img/logo.png" alt="栗の里ロゴ" class="logo-img" onerror="this.style.display='none'; document.querySelector('.logo-fallback').style.display='block'">
+          <span class="logo-fallback">栗の里</span>
+        </a>
+      </div>
+      <a href="tel:042-713-3200" class="header-tel-btn" aria-label="電話する">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 6.22 6.22l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span class="header-tel-num">042-713-3200</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="#kodawari" class="nav-link">こだわり</a></li>
+          <li><a href="menu.html" class="nav-link">メニュー</a></li>
+          <li><a href="#vegetable" class="nav-link">野菜即売</a></li>
+          <li><a href="#takeout" class="nav-link">テイクアウト</a></li>
+          <li><a href="#access" class="nav-link">アクセス</a></li>
+          <li><a href="#contact" class="nav-link">お問い合わせ</a></li>
+          <li class="nav-tel-item">
+            <a href="tel:042-713-3200" class="nav-tel-link">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 6.22 6.22l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              TEL 042-713-3200
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== 1. ヒーローセクション ===== -->
+    <section class="hero" id="hero">
+      <img src="img/hero.jpg" alt="栗の里 店内写真" class="hero-bg-img" onerror="this.style.display='none'">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">食と農の架け橋でありたい<br>笹生農園レストラン</h1>
+          <p class="hero-subtitle">神奈川・相模原の農園レストラン</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 2. こだわりセクション ===== -->
+    <section class="section kodawari-section" id="kodawari">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>こだわり<span class="title-line"></span>
+        </h2>
+        <div class="kodawari-list">
+
+          <!-- ① 自家製ハンバーグ：画像左・テキスト右 -->
+          <div class="kodawari-item fade-in">
+            <div class="kodawari-item-head">
+              <span class="kodawari-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 2v7c0 1.1.9 2 2 2s2-.9 2-2V2"/>
+                  <path d="M7 2v20"/>
+                  <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>
+                </svg>
+              </span>
+              <h3 class="kodawari-item-title">自家製ハンバーグ</h3>
+            </div>
+            <div class="kodawari-item-img">
+              <img src="img/kodawari1.jpg" alt="自家製ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="kodawari-item-body">
+              <ul class="kodawari-item-list">
+                <li>栗の里のハンバーグはすべて100%ビーフ</li>
+                <li>自家生産のお米を使用（田んぼ60枚）</li>
+                <li>「食と農の架け橋でありたい」というコンセプト</li>
+                <li>こだわりのトマトソースが自慢の一品</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ② ライスおかわり自由：画像右・テキスト左 -->
+          <div class="kodawari-item kodawari-item--rev fade-in">
+            <div class="kodawari-item-head">
+              <span class="kodawari-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 2C8 2 5 5 5 8h14c0-3-3-6-7-6z"/><path d="M5 8v2a7 7 0 0 0 14 0V8"/><path d="M8 17v2m8-2v2M6 19h12"/>
+                </svg>
+              </span>
+              <h3 class="kodawari-item-title">ライスおかわり自由</h3>
+            </div>
+            <div class="kodawari-item-img">
+              <img src="img/kodawari3.jpg" alt="ライスおかわり自由" onerror="this.style.display='none'">
+            </div>
+            <div class="kodawari-item-body">
+              <p class="kodawari-item-text">自家生産のお米を田んぼ60枚で育てています。ふっくら炊き上げた自慢のご飯は、おかわり自由。お腹いっぱいお召し上がりください。</p>
+            </div>
+          </div>
+
+          <!-- ③ 野菜即売：画像左・テキスト右 -->
+          <div class="kodawari-item fade-in">
+            <div class="kodawari-item-head">
+              <span class="kodawari-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 11h16l-2 9H6L4 11z"/>
+                  <line x1="8" y1="11" x2="7" y2="20"/>
+                  <line x1="12" y1="11" x2="12" y2="20"/>
+                  <line x1="16" y1="11" x2="17" y2="20"/>
+                  <path d="M8 11C8 7 10 5 12 5s4 2 4 6"/>
+                  <path d="M10 5c0 0-1-3 2-4 0 0 1 3-2 4z"/>
+                  <path d="M14 5c0 0 1-3-2-4 0 0-1 3 2 4z"/>
+                </svg>
+              </span>
+              <h3 class="kodawari-item-title">野菜即売</h3>
+            </div>
+            <div class="kodawari-item-img">
+              <img src="img/kodawari2.jpg" alt="野菜即売" onerror="this.style.display='none'">
+            </div>
+            <div class="kodawari-item-body">
+              <p class="kodawari-item-text">契約農家から届く新鮮な野菜をたっぷり使用。季節の恵みを味わえる、体にやさしいメニューをご用意しています。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 3. おすすめメニューセクション ===== -->
+    <section class="section menu-section" id="menu">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>おすすめメニュー<span class="title-line"></span>
+        </h2>
+        <div class="menu-grid">
+
+          <!-- メニュー① -->
+          <div class="menu-card fade-in">
+            <div class="menu-img-wrap">
+              <img src="img/menu1.jpg" alt="和牛入り手作りハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-row">
+                <span class="menu-badge">1</span>
+                <span class="menu-name">和牛入り手作りハンバーグ</span>
+              </div>
+              <p class="menu-price">¥<strong>590</strong><span class="price-from">〜</span><span class="price-tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <!-- メニュー② -->
+          <div class="menu-card fade-in">
+            <div class="menu-img-wrap">
+              <img src="img/menu2.jpg" alt="お肉3兄弟" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-row">
+                <span class="menu-badge">2</span>
+                <span class="menu-name">お肉3兄弟</span>
+              </div>
+              <p class="menu-price">¥<strong>1,090</strong><span class="price-tax">（税別）</span></p>
+              <span class="badge-note">ハンバーグ・チキン・ポーク</span>
+            </div>
+          </div>
+
+          <!-- メニュー③ -->
+          <div class="menu-card fade-in menu-sp-hide">
+            <div class="menu-img-wrap">
+              <img src="img/menu3.jpg" alt="リブロース&ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-row">
+                <span class="menu-badge">3</span>
+                <span class="menu-name">リブロース&amp;ハンバーグ</span>
+              </div>
+              <p class="menu-price">¥<strong>1,690</strong><span class="price-tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <!-- メニュー④ -->
+          <div class="menu-card fade-in menu-sp-hide">
+            <div class="menu-img-wrap">
+              <img src="img/menu4.jpg" alt="大エビフライ&ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-info">
+              <div class="menu-name-row">
+                <span class="menu-badge">4</span>
+                <span class="menu-name">大エビフライ&amp;ハンバーグ</span>
+              </div>
+              <p class="menu-price">¥<strong>1,690</strong><span class="price-tax">（税別）</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 全メニューへのリンクボタン -->
+        <div class="menu-more-wrap">
+          <a href="menu.html" class="btn-menu-more">
+            全メニューを見る
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 4. 野菜即売セクション ===== -->
+    <section class="vegetable-section" id="vegetable">
+      <div class="container">
+
+        <!-- タイトルエリア -->
+        <div class="veg-title-area">
+          <h2 class="section-title">
+            <span class="title-line"></span>野菜即売<span class="title-line"></span>
+          </h2>
+          <p class="veg-lead">毎日不定期で新鮮な野菜を無人販売しています。</p>
+        </div>
+
+        <!-- 写真グリッド（最大3枚） -->
+        <div class="veg-photo-grid fade-in">
+          <div class="veg-photo-wrap veg-sp-hide">
+            <!-- img/veg_photo1.jpg を用意して入れてください -->
+            <img src="img/veg_photo1.jpg" alt="野菜販売写真1" onerror="this.style.display='none'">
+          </div>
+          <div class="veg-photo-wrap">
+            <img src="img/veg_photo2.jpg" alt="野菜販売写真2" onerror="this.style.display='none'">
+          </div>
+          <div class="veg-photo-wrap veg-sp-hide">
+            <img src="img/veg_photo3.jpg" alt="野菜販売写真3" onerror="this.style.display='none'">
+          </div>
+        </div>
+
+        <!-- 季節ごとの販売品目 -->
+        <div class="veg-seasons fade-in">
+          <h3 class="veg-season-title">季節の販売品目</h3>
+          <div class="veg-season-grid">
+            <div class="veg-season-card">
+              <span class="season-label spring">春</span>
+              <p>アスパラガス・キャベツ・小松菜・春ほうれん草 など</p>
+            </div>
+            <div class="veg-season-card">
+              <span class="season-label summer">夏</span>
+              <p>トマト・きゅうり・なす・ピーマン・とうもろこし など</p>
+            </div>
+            <div class="veg-season-card">
+              <span class="season-label autumn">秋</span>
+              <p>さつまいも・里芋・かぼちゃ・ごぼう・栗 など</p>
+            </div>
+            <div class="veg-season-card">
+              <span class="season-label winter">冬</span>
+              <p>大根・白菜・長ねぎ・ほうれん草・ブロッコリー など</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 注意書き -->
+        <p class="veg-note fade-in">※野菜の販売は毎日不定期です。販売品目・数量は日によって異なります。売り切れの場合はご了承ください。</p>
+
+        <!-- Facebook最新投稿 -->
+        <div class="fb-feed-wrap fade-in">
+          <h3 class="fb-feed-title">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2" stroke="none">
+              <path d="M18 2H15C13.67 2 12.4 2.53 11.46 3.46 10.53 4.4 10 5.67 10 7v3H7v4h3v8h4v-8h3l1-4h-4V7c0-.27.1-.52.29-.71.18-.18.44-.29.71-.29H18V2z"/>
+            </svg>
+            Facebookの最新投稿
+          </h3>
+          <div class="fb-page-wrap">
+            <div class="fb-page"
+              data-href="https://www.facebook.com/profile.php?id=100002938203419"
+              data-tabs="timeline"
+              data-width=""
+              data-height="500"
+              data-small-header="true"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="false">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 5. ジェラート工房 ===== -->
+    <section class="section gelato-section" id="gelato">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>ジェラート工房<span class="title-line"></span>
+        </h2>
+        <div class="gelato-inner fade-in">
+          <div class="gelato-img-wrap">
+            <img src="img/gelato.jpg" alt="ジェラート" onerror="this.style.display='none'">
+          </div>
+          <div class="gelato-info">
+            <div class="takeout-head">
+              <h3 class="takeout-title">自家製ジェラート</h3>
+              <p class="takeout-subtitle">自家生産米粉入り</p>
+            </div>
+            <ul class="takeout-list">
+              <li>農園ジェラート各種 250円〜（税別）</li>
+              <li>3種盛り 390円 / 4種盛り 490円（各税別）</li>
+              <li>バウムクーヘンとのセット 440円（税別）</li>
+              <li>食事500円以上のお客様に特別価格適用</li>
+            </ul>
+            <p class="notice-red">※ジェラートのお持ち帰りはできません<br>※ジェラートカウンターにてお渡しいたします</p>
+          </div>
+        </div>
+
+        <!-- バウムクーヘン -->
+        <div class="baum-wrap fade-in">
+          <div class="baum-inner">
+            <div class="gelato-img-wrap">
+              <img src="img/baum.jpg" alt="自家製バウムクーヘン" onerror="this.style.display='none'">
+            </div>
+            <div class="gelato-info">
+              <div class="takeout-head">
+                <h3 class="takeout-title">自家製バウムクーヘン</h3>
+                <p class="takeout-subtitle">自家生産のお米100%使用</p>
+              </div>
+              <p class="card-text">自家生産のお米を100%使用した手作りのミニバウムクーヘン。毎日焼き上げた6種類のフレーバーからお選びいただけます。</p>
+              <ul class="takeout-list">
+                <li>ミニバウムクーヘン 各種 350円〜（税別）</li>
+                <li>フレーバー：プレーン・抹茶・チョコレート・キャラメル・ラズベリーローズ など6種類</li>
+                <li>ジェラートとのセット 440円（税別）※食事500円以上の方</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== 6. お持ち帰り弁当 ===== -->
+    <section class="section takeout-section" id="takeout">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>お持ち帰り弁当<span class="title-line"></span>
+        </h2>
+        <div class="bento-inner fade-in">
+          <div class="gelato-img-wrap">
+            <img src="img/bento.jpg" alt="お持ち帰り弁当" onerror="this.style.display='none'">
+          </div>
+          <div class="gelato-info">
+            <h3 class="bento-menu-heading">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                <line x1="3" y1="6" x2="21" y2="6"/>
+                <path d="M16 10a4 4 0 01-8 0"/>
+              </svg>
+              栗の里のお弁当メニュー
+            </h3>
+            <ul class="bento-menu-list">
+              <li><span class="bento-item-name">自家製ハンバーグ弁当</span><span class="bento-item-price">600円</span></li>
+              <li><span class="bento-item-name">BBQチキン弁当</span><span class="bento-item-price">600円</span></li>
+              <li><span class="bento-item-name">ポーク生姜焼き弁当</span><span class="bento-item-price">600円</span></li>
+              <li><span class="bento-item-name">ステーキ弁当</span><span class="bento-item-price">900円</span></li>
+              <li><span class="bento-item-name">リブロース弁当</span><span class="bento-item-price">1,590円</span></li>
+              <li><span class="bento-item-name">国産牛霜降りサーロイン弁当</span><span class="bento-item-price">3,690円</span></li>
+            </ul>
+            <p class="bento-tax-note">すべて税別</p>
+          </div>
+        </div>
+
+        <!-- PC：追加トッピング横長エリア -->
+        <div class="bento-topping-box fade-in">
+          <p class="bento-topping-title">追加トッピング</p>
+          <div class="bento-topping-list--wide">
+            <div class="bento-topping-item"><span>ライスの大盛</span><strong>100円</strong></div>
+            <div class="bento-topping-item"><span>ハンバーグ</span><strong>400円</strong></div>
+            <div class="bento-topping-item"><span>BBQチキン</span><strong>300円</strong></div>
+            <div class="bento-topping-item"><span>ポークしょうが焼き</span><strong>400円</strong></div>
+            <div class="bento-topping-item"><span>カットステーキ</span><strong>700円</strong></div>
+          </div>
+          <p class="bento-topping-note">※トッピングのみの場合は容器代50円（税別）頂戴いたします</p>
+        </div>
+
+        <div class="bento-more-wrap">
+          <a href="menu.html#cat-takeout" class="btn-bento-more">
+            テイクアウトメニューをすべて見る
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/>
+              <polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 6. よくある質問セクション ===== -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>よくある質問<span class="title-line"></span>
+        </h2>
+        <div class="faq-list">
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-badge">Q</span>
+              <span class="faq-text">お支払い方法は？</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>お会計は現金のみとなっております。クレジット・QR決済はご利用いただけません。</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-badge">Q</span>
+              <span class="faq-text">テイクアウトはできますか？</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>はい、お弁当メニューをご用意しています。レジカウンターにてお受け渡しいたします。<br>※ジェラートのお持ち帰りはできません。</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-badge">Q</span>
+              <span class="faq-text">予約は必要ですか？</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>混雑時はお待ちいただく場合がございますが、ご予約いただくとスムーズにご案内できます。</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-badge">Q</span>
+              <span class="faq-text">駐車場はありますか？</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>はい、駐車場あります。第二駐車場もお店の向かい側にご用意しております。</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-badge">Q</span>
+              <span class="faq-text">野菜即売はいつ買えますか？</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>毎日不定期販売です。店頭にてご確認ください。</p>
+            </div>
+          </div>
+
+          <div class="faq-item fade-in">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-badge">Q</span>
+              <span class="faq-text">子ども連れでも利用できますか？</span>
+              <span class="faq-arrow">▼</span>
+            </button>
+            <div class="faq-answer" hidden>
+              <p>はい、キッズメニューやお子様用のイスもご用意しています。</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 7. ご予約についてセクション ===== -->
+    <section class="section reservation-section" id="reservation">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>ご予約について<span class="title-line"></span>
+        </h2>
+        <div class="reservation-center fade-in">
+          <p class="reservation-desc">
+            飛び込みのご来店も大歓迎です。<br>
+            ご予約のお電話もお気軽にどうぞ。
+          </p>
+          <a href="tel:042-713-3200" class="btn-reserve-new">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.47 2 2 0 0 1 3.6 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.87a16 16 0 0 0 6.22 6.22l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span class="btn-reserve-tel">042-713-3200</span>
+          </a>
+          <p class="reservation-note">※ご予約はお一人様1,800円以上のお食事が必要となります</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 8. アクセスセクション ===== -->
+    <section class="section access-section" id="access">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>アクセス<span class="title-line"></span>
+        </h2>
+        <div class="access-grid">
+
+          <!-- Googleマップ -->
+          <div class="access-map fade-in">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12977.961181441979!2d139.30625972002153!3d35.59097051299575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60191cdb98b314c7%3A0x90980c68d1620638!2z5qCX44Gu6YeMIOebuOaooeWOn-OCpOODs-OCv-ODvOW6lw!5e0!3m2!1sja!2sjp!4v1778678218427!5m2!1sja!2sjp" width="100%" height="100%" style="border:0; border-radius:8px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <!-- アクセス情報 -->
+          <div class="access-info fade-in">
+            <dl class="access-dl">
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                住所
+              </dt>
+              <dd>神奈川県相模原市緑区二本松2-56-24</dd>
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                営業時間
+              </dt>
+              <dd>11:00〜22:00（L.O.21:30）</dd>
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                定休日
+              </dt>
+              <dd>年末年始のみ</dd>
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                駐車場
+              </dt>
+              <dd>第二駐車場完備<br><small>お店の向かい側に第二駐車場がございます</small></dd>
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.8L18 11l-1.7-3.4A2 2 0 0014.4 6h-4.8a2 2 0 00-1.8 1.1L6 10.5l-2.3.7A2 2 0 002 13v3c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/></svg>
+                お車でお越しの方
+              </dt>
+              <dd>圏央道（首都圏中央連絡自動車道）<strong>相模原IC</strong>より約3分</dd>
+              <dt>
+                <svg class="access-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/><path d="M12 3v8"/><path d="M8 19l-2 2"/><path d="M18 21l-2-2"/><circle cx="9" cy="15" r="1"/><circle cx="15" cy="15" r="1"/></svg>
+                電車でお越しの方
+              </dt>
+              <dd>JR横浜線・京王相模原線 <strong>橋本駅</strong>よりバス約20分<br>JR横浜線 <strong>相原駅</strong>より徒歩約36分</dd>
+            </dl>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 9. お問い合わせセクション ===== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-line"></span>お問い合わせ<span class="title-line"></span>
+        </h2>
+        <div class="contact-grid">
+
+          <!-- お問い合わせフォーム -->
+          <div class="contact-form fade-in">
+            <form action="" method="post">
+              <div class="form-group">
+                <label for="name">お名前 <span class="required-badge">必須</span></label>
+                <input type="text" id="name" name="name" required placeholder="例：山田 太郎">
+              </div>
+              <div class="form-group">
+                <label for="email">メールアドレス <span class="required-badge">必須</span></label>
+                <input type="email" id="email" name="email" required placeholder="例：example@email.com">
+              </div>
+              <div class="form-group">
+                <label for="message">お問い合わせ内容 <span class="required-badge">必須</span></label>
+                <textarea id="message" name="message" required rows="7" placeholder="お問い合わせ内容をご記入ください"></textarea>
+              </div>
+              <button type="submit" class="btn-gold btn-submit">送信する</button>
+            </form>
+          </div>
+
+          <!-- 採用情報ボックス -->
+          <div class="recruit-box fade-in">
+            <h3 class="recruit-title"><span class="title-line"></span>採用情報はこちら<span class="title-line"></span></h3>
+            <p class="recruit-text">一緒に楽しく仲間を募集しています。<br>LINEよりお気軽にご応募ください。</p>
+            <!-- 採用LINE QRコード -->
+            <div class="recruit-qr-area">
+              <div class="qr-placeholder">採用QRコード</div>
+            </div>
+            <p class="recruit-qr-note">LINEで応募受付中</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="footer">
+
+    <!-- 上段 -->
+    <div class="footer-top">
+      <div class="footer-left">
+        <img src="img/logo.png" alt="栗の里ロゴ" class="footer-logo" onerror="this.style.display='none'">
+      </div>
+      <div class="footer-right">
+        <div class="footer-sns-links">
+          <!-- Instagram -->
+          <a href="#" class="sns-link" aria-label="Instagram">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="5"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="#" class="sns-link" aria-label="Facebook">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2H15C13.67 2 12.4 2.53 11.46 3.46 10.53 4.4 10 5.67 10 7v3H7v4h3v8h4v-8h3l1-4h-4V7c0-.27.1-.52.29-.71.18-.18.44-.29.71-.29H18V2z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中段 -->
+    <div class="footer-middle">
+      <p class="footer-catchphrase">「食と農の架け橋でありたい」</p>
+      <p class="footer-name">農業レストラン 栗の里 相模原インター店</p>
+      <p class="footer-address">
+        <span class="footer-addr-line">神奈川県相模原市緑区二本松2-56-24</span>
+        <span class="footer-addr-line">TEL : 042-713-3200</span>
+      </p>
+    </div>
+
+    <!-- 下段 -->
+    <div class="footer-bottom">
+      <p>© 2025 栗の里 Kurinosato. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <script src="js/main.js"></script>
+
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0">
+  </script>
+
+</body>
+</html>

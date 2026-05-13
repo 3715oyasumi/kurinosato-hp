@@ -1,0 +1,115 @@
+/* =============================================
+   枠デザイン試験用CSS（確定後に削除してOK）
+   ============================================= */
+
+/* ===== パターンA：細い枠線（上品・シンプル） ===== */
+body.frame-a .section > .container,
+body.frame-a .vegetable-section > .container,
+body.frame-a .gelato-section > .container,
+body.frame-a .takeout-section > .container {
+  border: 1.5px solid rgba(200, 150, 62, 0.45);
+  border-radius: 14px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 48px;
+  padding-right: 48px;
+}
+
+/* ===== パターンB：外側に暗い帯 + 内側カード ===== */
+body.frame-b .section,
+body.frame-b .vegetable-section,
+body.frame-b .gelato-section,
+body.frame-b .takeout-section {
+  background-color: #d9ccb4 !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+body.frame-b .section > .container,
+body.frame-b .vegetable-section > .container,
+body.frame-b .gelato-section > .container,
+body.frame-b .takeout-section > .container {
+  background-color: var(--cream);
+  border: 1.5px solid rgba(200, 150, 62, 0.35);
+  border-radius: 14px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+  padding-left: 48px;
+  padding-right: 48px;
+  box-shadow: 0 2px 16px rgba(61, 31, 13, 0.07);
+}
+
+/* ===== おすすめ：クリーム地 + 白カード + 細枠 ===== */
+body.frame-rec .section,
+body.frame-rec .vegetable-section,
+body.frame-rec .gelato-section,
+body.frame-rec .takeout-section {
+  background-color: var(--cream) !important;
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+}
+
+body.frame-rec .section > .container,
+body.frame-rec .vegetable-section > .container,
+body.frame-rec .gelato-section > .container,
+body.frame-rec .takeout-section > .container {
+  background-color: #ffffff;
+  border: 1px solid #ddd0b8;
+  border-radius: 16px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 52px;
+  padding-right: 52px;
+  box-shadow: 0 2px 16px rgba(61, 31, 13, 0.06);
+}
+
+/* =============================================
+   切り替えボタンUI（右下に固定）
+   ============================================= */
+#frame-toggle {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  z-index: 9999;
+  background-color: var(--dark-brown);
+  border-radius: 12px;
+  padding: 14px 18px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 175px;
+}
+
+#frame-toggle p {
+  color: rgba(250, 243, 224, 0.6);
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 2px;
+  font-family: sans-serif;
+}
+
+.frame-btn {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 6px;
+  border: 1.5px solid rgba(200, 150, 62, 0.5);
+  background: transparent;
+  color: var(--cream);
+  font-size: 13px;
+  font-family: sans-serif;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+  text-align: center;
+}
+
+.frame-btn:hover {
+  background-color: rgba(200, 150, 62, 0.2);
+}
+
+.frame-btn.active {
+  background-color: var(--gold);
+  color: var(--white);
+  border-color: var(--gold);
+  font-weight: bold;
+}

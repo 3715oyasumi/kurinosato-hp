@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー一覧 | 農業レストラン 栗の里</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@700;900&family=Noto+Sans+JP:wght@400;500&family=Zen+Old+Mincho:wght@700;900&family=Cormorant+Garamond:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3">
+  <link rel="stylesheet" href="css/menu.css?v=3">
+</head>
+<body class="page-menu">
+
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="栗の里ロゴ" class="logo-img" onerror="this.style.display='none'; document.querySelector('.logo-fallback').style.display='block'">
+          <span class="logo-fallback">栗の里</span>
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="index.html#kodawari" class="nav-link">こだわり</a></li>
+          <li><a href="index.html#vegetable" class="nav-link">野菜即売</a></li>
+          <li><a href="index.html#access" class="nav-link">アクセス</a></li>
+          <li><a href="index.html#contact" class="nav-link">お問い合わせ</a></li>
+          <li><a href="index.html" class="nav-link nav-back-btn">トップ</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="nav-back-mobile">トップ</a>
+    </div>
+  </header>
+
+  <main class="menu-page">
+
+    <!-- ページタイトル -->
+    <div class="menu-page-hero">
+      <p class="menu-hero-sub">栗の里</p>
+      <h1 class="menu-page-title">グランドメニュー</h1>
+      <p class="menu-page-subtitle">表示価格はすべて税別です　／　お支払いは現金のみ</p>
+    </div>
+
+    <!-- カテゴリータブナビ -->
+    <nav class="cat-nav" id="cat-nav">
+      <div class="cat-nav-inner">
+        <a href="#cat-hamburg" class="cat-tab">ハンバーグ</a>
+        <a href="#cat-steak" class="cat-tab">ステーキ</a>
+        <a href="#cat-chicken" class="cat-tab">チキン・ポーク</a>
+        <a href="#cat-combo" class="cat-tab">コンビ</a>
+        <a href="#cat-plate" class="cat-tab">農園プレート</a>
+        <a href="#cat-salad" class="cat-tab">サラダ</a>
+        <a href="#cat-kids" class="cat-tab">お子様</a>
+        <a href="#cat-rice" class="cat-tab">ライス・スープ</a>
+        <a href="#cat-dessert" class="cat-tab">デザート</a>
+        <a href="#cat-drink" class="cat-tab">ドリンク</a>
+        <a href="#cat-takeout" class="cat-tab">テイクアウト</a>
+      </div>
+    </nav>
+
+    <div class="menu-page-body">
+
+      <!-- ===== ハンバーグ ===== -->
+      <section class="menu-category" id="cat-hamburg">
+        <h2 class="category-title">
+          <span class="category-line"></span>ハンバーグ<span class="category-line"></span>
+        </h2>
+        <p class="cat-note">すべて100%ビーフ使用。ソースは特別指定がなければデミグラスソースで提供。</p>
+        <div class="menu-page-grid">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/menu1.jpg" alt="和牛入り手作りハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">和牛入り手作りハンバーグ</h3>
+              <p class="menu-page-desc">デミグラス / おろしポン酢 / チーズ+¥100</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="hb1-s">シングル</button>
+                  <button class="size-tab" data-target="hb1-d">ダブル</button>
+                  <button class="size-tab" data-target="hb1-t">トリプル</button>
+                </div>
+                <div class="size-detail active" id="hb1-s"><span class="size-gram">130g</span><span class="size-price">¥<strong>590</strong></span></div>
+                <div class="size-detail" id="hb1-d"><span class="size-gram">260g</span><span class="size-price">¥<strong>990</strong></span></div>
+                <div class="size-detail" id="hb1-t"><span class="size-gram">390g</span><span class="size-price">¥<strong>1,390</strong></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/menu2.jpg" alt="和牛入り和風おろしハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">和牛入り和風おろしハンバーグ</h3>
+              <p class="menu-page-desc">和風おろしポン酢ソース</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="hb2-s">シングル</button>
+                  <button class="size-tab" data-target="hb2-d">ダブル</button>
+                  <button class="size-tab" data-target="hb2-t">トリプル</button>
+                </div>
+                <div class="size-detail active" id="hb2-s"><span class="size-gram">130g</span><span class="size-price">¥<strong>690</strong></span></div>
+                <div class="size-detail" id="hb2-d"><span class="size-gram">260g</span><span class="size-price">¥<strong>1,090</strong></span></div>
+                <div class="size-detail" id="hb2-t"><span class="size-gram">390g</span><span class="size-price">¥<strong>1,490</strong></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== ステーキ ===== -->
+      <section class="menu-category" id="cat-steak">
+        <h2 class="category-title">
+          <span class="category-line"></span>ステーキ<span class="category-line"></span>
+        </h2>
+        <div class="menu-page-grid">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/steak1.jpg" alt="リブロースステーキ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">リブロースステーキ</h3>
+              <p class="menu-page-desc">やわらかな旨みが凝縮された部位</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="st1-a">170g</button>
+                  <button class="size-tab" data-target="st1-b">300g</button>
+                </div>
+                <div class="size-detail active" id="st1-a"><span class="size-gram">170g</span><span class="size-price">¥<strong>1,290</strong></span></div>
+                <div class="size-detail" id="st1-b"><span class="size-gram">300g</span><span class="size-price">¥<strong>1,790</strong></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/steak2.jpg" alt="国産牛サーロインステーキ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">国産牛サーロインステーキ</h3>
+              <p class="menu-page-desc">国産牛の極上サーロイン</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="st2-a">210g</button>
+                </div>
+                <div class="size-detail active" id="st2-a"><span class="size-gram">210g</span><span class="size-price">¥<strong>3,490</strong></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== チキン・ポーク ===== -->
+      <section class="menu-category" id="cat-chicken">
+        <h2 class="category-title">
+          <span class="category-line"></span>チキン・ポーク<span class="category-line"></span>
+        </h2>
+        <div class="menu-page-grid">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/chicken.jpg" alt="BBQチキン" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">BBQチキン</h3>
+              <p class="menu-page-desc">香ばしいBBQソース仕立て</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="ck1-h">ハーフ</button>
+                  <button class="size-tab" data-target="ck1-m">中</button>
+                  <button class="size-tab" data-target="ck1-l">大</button>
+                </div>
+                <div class="size-detail active" id="ck1-h"><span class="size-gram">100g</span><span class="size-price">¥<strong>490</strong></span></div>
+                <div class="size-detail" id="ck1-m"><span class="size-gram">200g</span><span class="size-price">¥<strong>790</strong></span></div>
+                <div class="size-detail" id="ck1-l"><span class="size-gram">300g</span><span class="size-price">¥<strong>1,090</strong></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/pork.jpg" alt="ポークしょうが焼き" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">ポークしょうが焼き</h3>
+              <p class="menu-page-desc">スパイシーな黒胡椒が食欲をそそる</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="pk1-h">ハーフ</button>
+                  <button class="size-tab" data-target="pk1-m">中</button>
+                  <button class="size-tab" data-target="pk1-l">大</button>
+                </div>
+                <div class="size-detail active" id="pk1-h"><span class="size-gram">100g</span><span class="size-price">¥<strong>490</strong></span></div>
+                <div class="size-detail" id="pk1-m"><span class="size-gram">200g</span><span class="size-price">¥<strong>890</strong></span></div>
+                <div class="size-detail" id="pk1-l"><span class="size-gram">300g</span><span class="size-price">¥<strong>1,290</strong></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-page-card menu-page-card--wide">
+            <div class="menu-page-img">
+              <img src="img/ebi.jpg" alt="大海老フライ付きプレート" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">大海老フライ付きプレート</h3>
+              <p class="menu-page-desc">ジューシーな大海老フライと選べるメイン</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="ebi-h">＋ハンバーグ</button>
+                  <button class="size-tab" data-target="ebi-c">＋BBQチキン</button>
+                  <button class="size-tab" data-target="ebi-p">＋ポーク</button>
+                </div>
+                <div class="size-detail active" id="ebi-h"><span class="size-gram">ハンバーグセット</span><span class="size-price">¥<strong>1,690</strong></span></div>
+                <div class="size-detail" id="ebi-c"><span class="size-gram">BBQチキンセット</span><span class="size-price">¥<strong>1,690</strong></span></div>
+                <div class="size-detail" id="ebi-p"><span class="size-gram">ポークしょうが焼きセット</span><span class="size-price">¥<strong>1,690</strong></span></div>
+              </div>
+              <p class="menu-page-desc" style="margin-top:8px;">※ 女性・年配の方に人気。食べやすいサイズ感。</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== コンビネーション ===== -->
+      <section class="menu-category" id="cat-combo">
+        <h2 class="category-title">
+          <span class="category-line"></span>コンビネーションメニュー<span class="category-line"></span>
+        </h2>
+        <div class="menu-page-grid">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-chicken-hamburg.jpg" alt="BBQチキン＋ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">BBQチキン＋ハンバーグ</h3>
+              <p class="menu-page-price">¥<strong>690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-pork-hamburg.jpg" alt="ポークしょうが焼き＋ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">ポークしょうが焼き＋ハンバーグ</h3>
+              <p class="menu-page-price">¥<strong>790</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-chicken-pork.jpg" alt="BBQチキン＋ポークしょうが焼き" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">BBQチキン＋ポークしょうが焼き</h3>
+              <p class="menu-page-price">¥<strong>690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card highlight-card">
+            <div class="menu-page-img">
+              <img src="img/menu2.jpg" alt="お肉3兄弟" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">お肉3兄弟</h3>
+              <p class="menu-page-desc">ハンバーグ・チキン・ポーク</p>
+              <p class="menu-page-price">¥<strong>1,090</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-sirloin-hamburg.jpg" alt="国産牛ロース120g＋ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">国産牛ロース120g＋ハンバーグ</h3>
+              <p class="menu-page-price">¥<strong>1,190</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-sirloin-chicken.jpg" alt="国産牛ロース120g＋BBQチキン" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">国産牛ロース120g＋BBQチキン</h3>
+              <p class="menu-page-price">¥<strong>1,190</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-sirloin-pork.jpg" alt="国産牛ロース120g＋ポークしょうが焼き" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name menu-page-name--sm">国産牛ロース120g＋ポークしょうが焼き</h3>
+              <p class="menu-page-price">¥<strong>1,190</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card highlight-card">
+            <div class="menu-page-img">
+              <img src="img/combo-ribeye-hamburg.jpg" alt="リブロース170g＋ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">リブロース170g＋ハンバーグ</h3>
+              <p class="menu-page-price">¥<strong>1,690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-ribeye-chicken.jpg" alt="リブロース170g＋BBQチキン" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">リブロース170g＋BBQチキン</h3>
+              <p class="menu-page-price">¥<strong>1,690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/combo-ribeye-pork.jpg" alt="リブロース170g＋ポークしょうが焼き" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name menu-page-name--sm">リブロース170g＋ポークしょうが焼き</h3>
+              <p class="menu-page-price">¥<strong>1,690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== 農園プレート ===== -->
+      <section class="menu-category" id="cat-plate">
+        <h2 class="category-title">
+          <span class="category-line"></span>相模原インターオリジナル<span class="category-line"></span>
+        </h2>
+        <div class="menu-page-grid menu-page-grid--center">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/sasao-farm-plate.jpg" alt="笹生農園プレート" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">笹生農園プレート</h3>
+              <p class="menu-page-desc">手作りハンバーグ・栗の里米のポリア・農園サラダ（大葉花びら添え）・ローズドレッシング・手作り農園オニオン</p>
+              <p class="menu-page-price">¥<strong>990</strong><span class="tax">（税別）</span></p>
+              <span class="badge-limited">平日限定・1日4食</span>
+              <p class="menu-page-desc" style="margin-top:6px; font-size:11px;">※土日祝・お盆・クリスマス・年末年始・GW等は提供中止</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== サラダ ===== -->
+      <section class="menu-category" id="cat-salad">
+        <h2 class="category-title">
+          <span class="category-line"></span>新鮮サラダ<span class="category-line"></span>
+        </h2>
+        <p class="cat-note">笹生農園直送・大葉花びら使用。2人分程度のお取り分け用お皿をご用意します。</p>
+        <div class="menu-page-grid menu-page-grid--center">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/salad-plain.jpg" alt="新鮮サラダ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">新鮮サラダ</h3>
+              <div class="size-selector size-selector--sm">
+                <div class="size-tabs">
+                  <button class="size-tab active"
+                          data-target="salad-plain"
+                          data-img="img/salad-plain.jpg"
+                          data-alt="新鮮サラダ">プレーン</button>
+                  <button class="size-tab"
+                          data-target="salad-tofu"
+                          data-img="img/salad-ohba.jpg"
+                          data-alt="手作り農厚豆腐付き新鮮サラダ">豆腐付き</button>
+                  <button class="size-tab"
+                          data-target="salad-roast"
+                          data-img="img/salad-rose-dressing.jpg"
+                          data-alt="ローストビーフ付き新鮮サラダ">ローストビーフ付き</button>
+                </div>
+                <div class="size-detail active" id="salad-plain"><span class="size-gram">ドレッシング付き</span><span class="size-price">¥<strong>790</strong><span class="tax">（税別）</span></span></div>
+                <div class="size-detail" id="salad-tofu"><span class="size-gram">手作り農厚豆腐付き</span><span class="size-price">¥<strong>890</strong><span class="tax">（税別）</span></span></div>
+                <div class="size-detail" id="salad-roast"><span class="size-gram">ローストビーフ付き</span><span class="size-price">¥<strong>990</strong><span class="tax">（税別）</span></span></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== お子様メニュー ===== -->
+      <section class="menu-category" id="cat-kids">
+        <h2 class="category-title">
+          <span class="category-line"></span>お子様メニュー<span class="category-line"></span>
+        </h2>
+        <p class="cat-note">12歳まで。＋¥290でドリンクバー追加可。12歳超は＋¥300。</p>
+        <div class="menu-page-grid">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/kids-hamburg.jpg" alt="お子様ハンバーグ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">お子様ハンバーグ</h3>
+              <p class="menu-page-desc">おもちゃ付き</p>
+              <p class="menu-page-price">¥<strong>890</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/kids-steak.jpg" alt="お子様ステーキ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">お子様ステーキ</h3>
+              <p class="menu-page-desc">おもちゃ付き</p>
+              <p class="menu-page-price">¥<strong>1,090</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== ライス・スープ ===== -->
+      <section class="menu-category" id="cat-rice">
+        <h2 class="category-title">
+          <span class="category-line"></span>ライス・スープセット<span class="category-line"></span>
+        </h2>
+        <div class="menu-page-grid menu-page-grid--list">
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">農園サラダセット</h3>
+                <p class="menu-page-desc">農園サラダ・濃厚ポタージュスープ・ライス食べ放題</p>
+              </div>
+              <p class="menu-page-price">¥<strong>690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name menu-page-name--sm">濃厚ポタージュスープセット</h3>
+                <p class="menu-page-desc">濃厚ポタージュスープ＋ライス食べ放題</p>
+              </div>
+              <p class="menu-page-price">¥<strong>450</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">お手軽コンソメセット</h3>
+                <p class="menu-page-desc">コンソメスープ＋ライス食べ放題</p>
+              </div>
+              <p class="menu-page-price">¥<strong>200</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">ライス単品</h3>
+              <p class="menu-page-price">¥<strong>200</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <h3 class="menu-page-name">コールスロー単品</h3>
+              <p class="menu-page-price">¥<strong>390</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== デザート・ドリンクバー ===== -->
+      <section class="menu-category" id="cat-dessert">
+        <h2 class="category-title">
+          <span class="category-line"></span>デザート・ジェラート<span class="category-line"></span>
+        </h2>
+        <div class="menu-page-grid menu-page-grid--2col">
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/creme-brulee.jpg" alt="手作り本格農家クレームブリュレ" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info" style="padding-bottom: 12px;">
+              <h3 class="menu-page-name">手作り本格農家クレームブリュレ</h3>
+              <p class="menu-page-price">¥<strong>290</strong><span class="tax">（税別）</span></p>
+              <p style="font-size:11px; color:#888; margin-top:4px;">※600円以上のお食事をされていない場合は¥490になります</p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-img">
+              <img src="img/gelato.jpg" alt="農園ジェラート" onerror="this.style.display='none'">
+            </div>
+            <div class="menu-page-info">
+              <h3 class="menu-page-name menu-page-name--sm">農園ジェラート（自家生産米粉入り）</h3>
+              <p class="menu-page-desc">※店内でのお渡しのみ。席での注文不可。</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="gelato-1">1種</button>
+                  <button class="size-tab" data-target="gelato-3">3種盛り</button>
+                  <button class="size-tab" data-target="gelato-4">4種盛り</button>
+                </div>
+                <div class="size-detail active" id="gelato-1"><span class="size-gram">1種</span><span class="size-price">¥<strong>250</strong></span></div>
+                <div class="size-detail" id="gelato-3"><span class="size-gram">選べる3種盛り</span><span class="size-price">¥<strong>390</strong></span></div>
+                <div class="size-detail" id="gelato-4"><span class="size-gram">選べる4種盛り</span><span class="size-price">¥<strong>490</strong></span></div>
+              </div>
+              <p class="menu-page-desc" style="margin-top:12px; font-weight:700; color:var(--dark-brown);">バウムクーヘン＋ジェラートセット</p>
+              <p class="menu-page-desc" style="font-size:11px;">自家製米使用6次加工コラボデザート（組み合わせ約40種以上）</p>
+              <div class="size-selector">
+                <div class="size-tabs">
+                  <button class="size-tab active" data-target="baum-a">食事500円以上</button>
+                  <button class="size-tab" data-target="baum-b">それ以外</button>
+                </div>
+                <div class="size-detail active" id="baum-a"><span class="size-gram">食事500円以上の方</span><span class="size-price">¥<strong>440</strong></span></div>
+                <div class="size-detail" id="baum-b"><span class="size-gram">それ以外の方</span><span class="size-price">¥<strong>590</strong></span></div>
+              </div>
+              <p class="menu-page-desc" style="margin-top:6px; font-size:11px; color:#c0392b;">※お持ち帰り不可</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== ドリンクメニュー ===== -->
+      <section class="menu-category" id="cat-drink">
+        <h2 class="category-title">
+          <span class="category-line"></span>ドリンクメニュー<span class="category-line"></span>
+        </h2>
+        <p class="cat-note">※お車を運転されるお客様への提供はしておりません。</p>
+        <div class="menu-page-grid menu-page-grid--list">
+
+          <div class="menu-page-card">
+            <div class="menu-page-info" style="flex-wrap:wrap;">
+              <h3 class="menu-page-name">ドリンクバー</h3>
+              <p class="menu-page-price">¥<strong>290</strong><span class="tax">（税別）</span></p>
+              <p style="font-size:11px; color:#888; width:100%; margin-top:6px;">※大人・子供共通料金</p>
+              <p style="font-size:11px; color:#888; width:100%; margin-top:2px;">※食事600円未満の場合は¥490になります</p>
+            </div>
+          </div>
+
+          <h3 class="category-title list-section-label">
+            <span class="category-line"></span>アルコール類<span class="category-line"></span>
+          </h3>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">角ハイボール</h3>
+                <p class="menu-page-desc">ジョッキ160ml</p>
+              </div>
+              <p class="menu-page-price">¥<strong>390</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">瓶ビール</h3>
+                <p class="menu-page-desc">プレミアムアルコール・中瓶</p>
+              </div>
+              <p class="menu-page-price">¥<strong>690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">ノンアルコールビール</h3>
+                <p class="menu-page-desc">オールフリー</p>
+              </div>
+              <p class="menu-page-price">¥<strong>390</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">レモンサワー</h3>
+                <p class="menu-page-desc">大ジョッキ</p>
+              </div>
+              <p class="menu-page-price">¥<strong>390</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">グレープフルーツサワー</h3>
+                <p class="menu-page-desc">大ジョッキ</p>
+              </div>
+              <p class="menu-page-price">¥<strong>390</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info">
+              <div>
+                <h3 class="menu-page-name">梅サワー</h3>
+                <p class="menu-page-desc">大ジョッキ</p>
+              </div>
+              <p class="menu-page-price">¥<strong>390</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ===== テイクアウト ===== -->
+      <section class="menu-category" id="cat-takeout">
+        <h2 class="category-title">
+          <span class="category-line"></span>お持ち帰り弁当<span class="category-line"></span>
+        </h2>
+        <p class="cat-note">レジカウンターでのみお受け渡し。ソース別・ソース増量は不可。</p>
+        <div class="menu-page-grid">
+
+          <div class="menu-page-card">
+            <div class="menu-page-info" style="padding-top:20px;">
+              <h3 class="menu-page-name">自家製ハンバーグ弁当</h3>
+              <p class="menu-page-price">¥<strong>600</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info" style="padding-top:20px;">
+              <h3 class="menu-page-name">BBQチキン弁当</h3>
+              <p class="menu-page-price">¥<strong>600</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info" style="padding-top:20px;">
+              <h3 class="menu-page-name">ポークしょうが焼き弁当</h3>
+              <p class="menu-page-price">¥<strong>600</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info" style="padding-top:20px;">
+              <h3 class="menu-page-name">ステーキ弁当</h3>
+              <p class="menu-page-price">¥<strong>900</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card">
+            <div class="menu-page-info" style="padding-top:20px;">
+              <h3 class="menu-page-name">リブロース弁当</h3>
+              <p class="menu-page-price">¥<strong>1,590</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+          <div class="menu-page-card highlight-card">
+            <div class="menu-page-info" style="padding-top:20px;">
+              <h3 class="menu-page-name">国産牛サーロイン弁当</h3>
+              <p class="menu-page-price">¥<strong>3,690</strong><span class="tax">（税別）</span></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- 追加トッピング -->
+        <div class="topping-box">
+          <h4 class="topping-title">追加トッピング</h4>
+          <div class="topping-grid">
+            <div class="topping-item"><span>ライス大盛り</span><span>＋¥100</span></div>
+            <div class="topping-item"><span>ハンバーグ追加</span><span>＋¥400</span></div>
+            <div class="topping-item"><span>BBQチキン追加</span><span>＋¥300</span></div>
+            <div class="topping-item"><span>ポークしょうが焼き追加</span><span>＋¥400</span></div>
+            <div class="topping-item"><span>リブロースステーキ追加</span><span>＋¥700</span></div>
+          </div>
+          <p class="topping-note">※トッピングのみのご注文は容器代¥50追加</p>
+        </div>
+
+      </section>
+
+      <!-- 注意書き -->
+      <div class="menu-page-note">
+        <p>※表示価格はすべて税別です。</p>
+        <p>※お支払いは現金のみとなっております。</p>
+        <p>※メニューの内容・価格は予告なく変更する場合がございます。</p>
+        <p>※ピークタイム等、電話対応できない時間帯があります。</p>
+      </div>
+
+      <div class="menu-back-wrap">
+        <a href="index.html" class="btn-menu-more">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+          </svg>
+          トップページに戻る
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-middle">
+      <p class="footer-catchphrase">「食と農の架け橋でありたい」</p>
+      <p class="footer-name">農業レストラン 栗の里 相模原インター店　有限会社 笹生農園</p>
+      <p class="footer-address">神奈川県相模原市緑区二本松2-56-24　/　TEL : 042-713-3200</p>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 栗の里 Kurinosato. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ===== サイズ選択ボタン =====
+    document.querySelectorAll('.size-selector').forEach(selector => {
+      const tabs = selector.querySelectorAll('.size-tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // ボタンのアクティブ切り替え
+          tabs.forEach(t => t.classList.remove('active'));
+          tab.classList.add('active');
+          // 詳細エリアの表示切り替え
+          const targetId = tab.dataset.target;
+          selector.querySelectorAll('.size-detail').forEach(d => d.classList.remove('active'));
+          document.getElementById(targetId).classList.add('active');
+          // 画像切り替え（data-imgがあるボタンのみ）
+          if (tab.dataset.img) {
+            const card = selector.closest('.menu-page-card');
+            const img = card && card.querySelector('.menu-page-img img');
+            if (img) {
+              img.src = tab.dataset.img;
+              img.alt = tab.dataset.alt || '';
+            }
+          }
+        });
+      });
+    });
+
+    // カテゴリータブのスクロール追従ハイライト
+    const tabs = document.querySelectorAll('.cat-tab');
+    const sections = document.querySelectorAll('.menu-category');
+    const headerH = document.querySelector('.header').offsetHeight;
+    const catNavH = document.querySelector('.cat-nav').offsetHeight;
+
+    // タブクリックでスムーススクロール
+    tabs.forEach(tab => {
+      tab.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(tab.getAttribute('href'));
+        if (!target) return;
+        const top = target.getBoundingClientRect().top + window.scrollY - headerH - catNavH - 16;
+        window.scrollTo({ top, behavior: 'smooth' });
+      });
+    });
+
+    // スクロールでタブをハイライト
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tabs.forEach(t => t.classList.remove('active'));
+          const activeTab = document.querySelector(`.cat-tab[href="#${entry.target.id}"]`);
+          if (activeTab) activeTab.classList.add('active');
+        }
+      });
+    }, { rootMargin: `-${headerH + catNavH + 20}px 0px -60% 0px` });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
+
+
+</body>
+</html>
